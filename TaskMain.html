@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>코로나 예방접종 센터</title>
+    <script defer src="./Task.js"></script>
+    <style>
+        * {
+            box-sizing: border-box;
+            font-size: 15px;
+        }
+        body {
+            background-color: rgb(212, 243, 255);
+        }
+        div {
+            background-color: white;
+            margin: 0 auto;
+            width: 60%;
+        }
+        h1 {
+            text-align: center;
+            font-size: 30px;
+            padding-top: 40px;
+        }
+        table {
+            width: 100%;
+        }
+        #table{
+            padding: 0 40px 20px;
+            height: 800px;
+        }
+        table td {
+            border: 1px dotted gray;
+            border-collapse: collapse;
+            padding: 10px;
+        }
+        table td:nth-child(1) { /* 센터명 */
+            width: 40%;
+        }
+        table td:nth-child(2) { /* 주소 */
+            width: 30%;
+        }
+        table td:nth-child(3) { /* 우편번호 */
+            width: 15%;
+            text-align: center;
+        }
+
+        #th {
+            padding: 0 40px;
+            margin-top: 50px;
+        }
+        table th {
+            border: 1px dotted gray;
+            border-collapse: collapse;
+        }
+        table th:nth-child(1) { /* 센터명 */
+            width: 40%;
+        }
+        table th:nth-child(2) { /* 주소 */
+            width: 30%;
+        }
+        table th:nth-child(3) { /* 우편번호 */
+            width: 15%;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>예방접종센터</h1>
+        <table id="th">
+            <tr>
+                <th>센터명</th>
+                <th>주소</th>
+                <th>우편번호</th>
+                <th>전화번호</th>
+            </tr>
+        </table>
+        <table id="table"></table>
+    </div>
+</body>
+</html>
